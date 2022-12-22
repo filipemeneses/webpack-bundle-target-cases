@@ -23,6 +23,7 @@ module.exports = targets.map((target) => {
   return {
     mode: "production",
     entry: readdirSync("./cases")
+      // .filter((filename) => filename.includes('fn-many'))
       .filter((filename) => filename.endsWith(".ts"))
       .map((filename) => filename.split(".")[0])
       .reduce((obj, filename) => {
@@ -74,7 +75,25 @@ ${prettier.format(source)}`
     ],
     optimization: {
       minimize: true,
-      minimizer: [new TerserPlugin({})],
+      minimizer: [new TerserPlugin({
+        parallel: true,
+        terserOptions : {
+          compress: {
+            booleans_as_integers: true,
+            collapse_vars: true,
+            // drop_console: true,
+            ecma: 13,
+            unsafe: true,
+            unsafe_comps: true,
+            unsafe_Function: true,
+            unsafe_math: true,
+            unsafe_symbols: true,
+            // less performant on anon fns
+            unsafe_methods: false,
+            unsafe_proto: true
+          }
+        }
+      })],
     },
 
     output: {

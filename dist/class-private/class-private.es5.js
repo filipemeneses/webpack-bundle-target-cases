@@ -1,6 +1,6 @@
-// terser size before prettier: 555
+// terser size before prettier: 546
 ({
-  118: function () {
+  118() {
     var e,
       t,
       i =

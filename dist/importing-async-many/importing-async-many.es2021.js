@@ -1,4 +1,4 @@
-// terser size before prettier: 3136
+// terser size before prettier: 3126
 (() => {
   var e,
     t,
@@ -34,7 +34,7 @@
       for (var r in t)
         a.o(t, r) &&
           !a.o(e, r) &&
-          Object.defineProperty(e, r, { enumerable: !0, get: t[r] });
+          Object.defineProperty(e, r, { enumerable: 1, get: t[r] });
     }),
     (a.f = {}),
     (a.e = (e) =>
@@ -43,7 +43,7 @@
     (a.g = (function () {
       if ("object" == typeof globalThis) return globalThis;
       try {
-        return this || new Function("return this")();
+        return this || Function("", "return this")();
       } catch (e) {
         if ("object" == typeof window) return window;
       }
@@ -71,7 +71,7 @@
             }
           }
         u ||
-          ((c = !0),
+          ((c = 1),
           ((u = document.createElement("script")).charset = "utf-8"),
           (u.timeout = 120),
           a.nc && u.setAttribute("nonce", a.nc),
@@ -102,7 +102,7 @@
       "undefined" != typeof Symbol &&
         Symbol.toStringTag &&
         Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
-        Object.defineProperty(e, "__esModule", { value: !0 });
+        Object.defineProperty(e, "__esModule", { value: 1 });
     }),
     (() => {
       var e;
@@ -113,9 +113,7 @@
         r.length && (e = r[r.length - 1].src);
       }
       if (!e)
-        throw new Error(
-          "Automatic publicPath is not supported in this browser"
-        );
+        throw Error("Automatic publicPath is not supported in this browser");
       (e = e
         .replace(/#.*$/, "")
         .replace(/\?.*$/, "")
@@ -132,7 +130,7 @@
             var n = new Promise((r, n) => (o = e[t] = [r, n]));
             r.push((o[2] = n));
             var i = a.p + a.u(t),
-              u = new Error();
+              u = Error();
             a.l(
               i,
               (r) => {
