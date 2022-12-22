@@ -1,15 +1,22 @@
-// terser size before prettier: 174
+// terser size before prettier: 676
 (() => {
-  var t = (function () {
-    function t() {
-      this.mount();
+  var e = (function () {
+    function e() {
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+        this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
     }
     return (
-      (t.prototype.mount = function () {
-        document.querySelector("canvas").getContext("2d").beginPath();
-      }),
-      t
+      (e.prototype.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod =
+        function () {
+          document.querySelector("canvas").getContext("2d").beginPath();
+        }),
+      e
     );
   })();
-  window.MyClass = t;
+  window.MyClass = e;
 })();

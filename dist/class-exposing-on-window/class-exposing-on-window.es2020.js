@@ -1,9 +1,15 @@
-// terser size before prettier: 120
+// terser size before prettier: 622
 window.MyClass = class {
   constructor() {
-    this.mount();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod(),
+      this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
   }
-  mount() {
+  callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod() {
     document.querySelector("canvas").getContext("2d").beginPath();
   }
 };

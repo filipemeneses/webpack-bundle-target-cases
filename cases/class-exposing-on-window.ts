@@ -1,8 +1,14 @@
 class MyClass {
   constructor() {
-    this.mount();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
+    this.callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod();
   }
-  mount() {
+  callThisVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethod() {
     document.querySelector("canvas").getContext("2d").beginPath();
   }
 }
