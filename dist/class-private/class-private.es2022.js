@@ -1,3 +1,4 @@
+// terser size before prettier: 64
 new (class {
   #h = 0;
   #t;

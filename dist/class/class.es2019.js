@@ -1,3 +1,4 @@
+// terser size before prettier: 119
 new (class {
   constructor() {
     this.mount();

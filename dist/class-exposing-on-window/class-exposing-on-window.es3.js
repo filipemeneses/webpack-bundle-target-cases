@@ -1,3 +1,4 @@
+// terser size before prettier: 174
 (() => {
   var t = (function () {
     function t() {

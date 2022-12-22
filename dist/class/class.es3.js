@@ -1,3 +1,4 @@
+// terser size before prettier: 156
 new ((function () {
   function t() {
     this.mount();

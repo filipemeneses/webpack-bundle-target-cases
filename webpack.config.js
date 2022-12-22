@@ -60,8 +60,10 @@ module.exports = targets.map((target) => {
             (compilation, callback) => {
               const { RawSource } = webpack.sources;
               for (let asset in compilation.assets) {
+                const source = compilation.assets[asset].source();
                 compilation.assets[asset] = new RawSource(
-                  prettier.format(compilation.assets[asset].source())
+                  `// terser size before prettier: ${source.length}
+${prettier.format(source)}`
                 );
               }
               callback();

@@ -1,3 +1,4 @@
+// terser size before prettier: 150
 (() => {
   "use strict";
   const s = JSON.parse('{"similar":1111111111,"unique-a":1}'),

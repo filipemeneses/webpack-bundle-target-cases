@@ -1,3 +1,4 @@
+// terser size before prettier: 3065
 (() => {
   var e,
     t,

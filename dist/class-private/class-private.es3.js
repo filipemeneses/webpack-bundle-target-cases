@@ -1,3 +1,4 @@
+// terser size before prettier: 555
 ({
   118: function () {
     var e,

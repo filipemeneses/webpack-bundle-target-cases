@@ -1,3 +1,4 @@
+// terser size before prettier: 452
 ({
   182: function () {
     var n,

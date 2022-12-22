@@ -1,9 +1,15 @@
+// terser size before prettier: 179
 (() => {
-  var e,
-    n = function (e) {
-      return document.querySelector(e);
+  var n = function (n) {
+      return document.querySelector(n);
     },
-    r = n("canvas"),
+    e = function (n, e) {
+      n.appendChild(e);
+    },
+    c = n("canvas"),
+    r = n("h1"),
+    t = n("h2"),
+    u = n("h3"),
     a = n("div");
-  (e = r), a.appendChild(e);
+  e(a, c), e(a, r), e(a, t), e(a, u);
 })();

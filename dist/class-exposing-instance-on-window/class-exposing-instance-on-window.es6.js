@@ -1,3 +1,4 @@
+// terser size before prettier: 124
 window.MyClass = new (class {
   constructor() {
     this.mount();
