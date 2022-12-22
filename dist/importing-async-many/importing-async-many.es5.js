@@ -1,4 +1,4 @@
-// terser size before prettier: 3123
+// terser size before prettier: 3111
 (() => {
   var e,
     t,
@@ -48,7 +48,7 @@
         if ("object" == typeof window) return window;
       }
     })()),
-    (a.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
+    (a.o = (e, t) => ({}.hasOwnProperty.call(e, t))),
     (r = {}),
     (o = "webpack-studies:"),
     (a.l = (e, t, n, i) => {
@@ -61,12 +61,12 @@
             s < l.length;
             s++
           ) {
-            var p = l[s];
+            var d = l[s];
             if (
-              p.getAttribute("src") == e ||
-              p.getAttribute("data-webpack") == o + n
+              d.getAttribute("src") == e ||
+              d.getAttribute("data-webpack") == o + n
             ) {
-              u = p;
+              u = d;
               break;
             }
           }
@@ -78,7 +78,7 @@
           u.setAttribute("data-webpack", o + n),
           (u.src = e)),
           (r[e] = [t]);
-        var d = (t, o) => {
+        var p = (t, o) => {
             (u.onerror = u.onload = null), clearTimeout(f);
             var n = r[e];
             if (
@@ -90,11 +90,11 @@
               return t(o);
           },
           f = setTimeout(
-            d.bind(null, void 0, { type: "timeout", target: u }),
+            p.bind(null, void 0, { type: "timeout", target: u }),
             12e4
           );
-        (u.onerror = d.bind(null, u.onerror)),
-          (u.onload = d.bind(null, u.onload)),
+        (u.onerror = p.bind(null, u.onerror)),
+          (u.onload = p.bind(null, u.onload)),
           c && document.head.appendChild(u);
       }
     }),

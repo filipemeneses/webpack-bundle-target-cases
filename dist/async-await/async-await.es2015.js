@@ -1,21 +1,21 @@
-// terser size before prettier: 443
+// terser size before prettier: 452
 ({
-  182() {
+  182: function () {
     var n,
       t =
         (this && this.__awaiter) ||
-        function (n, t, e, o) {
-          return new (e || (e = Promise))(function (i, c) {
+        function (n, t, o, e) {
+          return new (o || (o = Promise))(function (i, c) {
             function u(n) {
               try {
-                r(o.next(n));
+                r(e.next(n));
               } catch (n) {
                 c(n);
               }
             }
             function a(n) {
               try {
-                r(o.throw(n));
+                r(e.throw(n));
               } catch (n) {
                 c(n);
               }
@@ -25,13 +25,13 @@
               n.done
                 ? i(n.value)
                 : ((t = n.value),
-                  t instanceof e
+                  t instanceof o
                     ? t
-                    : new e(function (n) {
+                    : new o(function (n) {
                         n(t);
                       })).then(u, a);
             }
-            r((o = o.apply(n, t || [])).next());
+            r((e = e.apply(n, t || [])).next());
           });
         };
     ((n = 1),

@@ -1,4 +1,4 @@
-// terser size before prettier: 3055
+// terser size before prettier: 3043
 (() => {
   var e,
     t,
@@ -48,7 +48,7 @@
         if ("object" == typeof window) return window;
       }
     })()),
-    (a.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
+    (a.o = (e, t) => ({}.hasOwnProperty.call(e, t))),
     (r = {}),
     (o = "webpack-studies:"),
     (a.l = (e, t, n, i) => {
